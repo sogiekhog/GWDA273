@@ -1,0 +1,73 @@
+body { background-color: #333; }
+
+@media screen and (min-width: 500px) {
+  body { background-color: orange; }
+}
+
+@media screen and (min-width: 700px) {
+  body { background-color: purple; }
+}
+
+@media screen and (min-width: 900px) {
+  body { background-color: black; }
+}
+  .wrapper {
+    background-color: #eee;
+
+    width: 90%;
+    min-width: 320px;
+    max-width: 1200px;
+
+    margin: auto;
+    padding: 20px;
+  }
+
+  header { padding: 20px; background-color: teal; }
+  nav { padding: 20px; background-color: #006161; }
+  main { padding: 20px; background-color: white; }
+  footer { padding: 20px; background-color: teal; }
+
+  /*----------
+  Nav styles
+  ----------*/
+  nav {
+    text-align: center;
+  }
+  nav a {
+    display: block;
+    margin: auto;
+    width: 80%;
+    line-height: 50px;
+    background-color: #034646;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+
+    color: white;
+  }
+
+  @media screen and (min-width: 550px) {
+    nav a {
+      width: 100px;
+      display: inline-block;
+    }
+  }
+
+nav a:hover {
+    background-color: #021919;
+  }
+nav a.theChosen {
+  background-color: #4db19b;
+}
+/*----------
+Flex Box
+----------*/
+main article { padding: 20px; background-color: goldenrod; }
+main aside { padding: 20px; background-color: maroon; }
+
+@media screen and (min-width: 500px) {
+  main { display: flex; }
+  main article { width: 60%; }
+  main aside { width: 40%; }
+}
